@@ -1,0 +1,29 @@
+
+### Get an estimate for an existing vehicle
+GET http://localhost:3000/reports?make=ferrari&model=360+Modena&lng=0&lat=0&mileage=10000&year=2005
+
+### Create a new report
+POST http://localhost:3000/reports
+content-type: application/json
+
+{
+    "make": "Ferrari",
+    "model": "360 Modena",
+    "year": 2007,
+    "mileage": 10000,
+    "lng": 0,
+    "lat": 0,
+    "price": 105000
+}
+
+### Change approval status of report
+PATCH http://localhost:3000/reports/1
+content-type: application/json
+
+{
+    "approved": true
+}
+
+### Delete a report with a given id
+DELETE http://localhost:3000/reports/1
+
