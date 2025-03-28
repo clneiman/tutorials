@@ -1,0 +1,32 @@
+-- INSERT INTO events (
+--         name,
+--         date_planned,
+--         description,
+--         max_participants,
+--         min_age
+--     )
+-- VALUES(
+--         'The best event ever',
+--         '2024-12-31 23:59:59',
+--         'This is the best event you can imagine. You should definitely attend this event. It will be the best.',
+--         20,
+--         18
+--     ),
+--     (
+--         'The second best event ever',
+--         '2024-12-31 23:59:59',
+--         'This is the second best event you can imagine. You should definitely attend this event. It will be the second best.',
+--         100,
+--         16
+--     ),
+--     (
+--         'The third best event ever',
+--         '2024-12-31 23:59:59',
+--         'This is the third best event you can imagine. You should definitely attend this event. It will be the third best.',
+--         10,
+--         21
+--     );
+--
+-- UPDATE events SET min_age = 16 WHERE id = 3;
+--
+-- DELETE FROM events WHERE id = 2;

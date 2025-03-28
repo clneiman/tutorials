@@ -1,0 +1,9 @@
+-- SELECT SUM(amount_billed) AS total_billed,
+--     SUM(amount_tipped) AS total_tipped
+-- FROM bookings;
+-- 
+-- SELECT AVG(num_guests) AS average_guests
+-- FROM bookings
+--
+-- SELECT ROUND(AVG(amount_tipped), 2) AS average_guests
+-- FROM bookings

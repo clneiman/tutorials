@@ -1,0 +1,73 @@
+-- -- STEP 1: CREATE DATABASE
+-- CREATE DATABASE online_shop;
+-- -- STEP 2 & 3: CREATE and CONFIGURE TABLE
+-- CREATE TABLE products (
+--     name VARCHAR(200),
+--     price NUMERIC(10, 2),
+--     description TEXT,
+--     amount_in_stock SMALLINT,
+--     image_url VARCHAR(500)
+-- );
+-- -- STEP 4: ADD DUMMY DATA
+-- INSERT INTO products (
+--         name,
+--         price,
+--         description,
+--         amount_in_stock,
+--         image_url
+--     )
+-- VALUES (
+--         'Laptop',
+--         1000,
+--         'A laptop for all your needs',
+--         10,
+--         'https://example.com/laptop.jpg'
+--     ),
+--     (
+--         'Mouse',
+--         20,
+--         'A mouse for all your needs',
+--         100,
+--         'https://example.com/mouse.jpg'
+--     ),
+--     (
+--         'Keyboard',
+--         50,
+--         'A keyboard for all your needs',
+--         50,
+--         'https://example.com/keyboard.jpg'
+--     ),
+--     (
+--         'Monitor',
+--         200,
+--         'A monitor for all your needs',
+--         20,
+--         'https://example.com/monitor.jpg'
+--     ),
+--     (
+--         'Headphones',
+--         100,
+--         'Headphones for all your needs',
+--         30,
+--         'https://example.com/headphones.jpg'
+--     );
+-- -- STEP 5: ADD CONSTAINTS
+-- ALTER TABLE products
+-- MODIFY COLUMN name VARCHAR(200) NO NULL,
+--     MODIFY COLUMN price NUMERIC(10, 2) NOT NULL CHECK (price > 0),
+--     MODIFY COLUMN description TEXT NOT NULL,
+--     MODIFY amount_in_stock SMALLINT CHECK (amount_in_stock >= 0);
+-- ALTER TABLE products
+-- ALTER COLUMN name
+-- SET NOT NULL,
+--     ALTER COLUMN price
+-- SET NOT NULL,
+--     ALTER COLUMN description
+-- SET NOT NULL,
+--     ADD CONSTRAINT price_positive CHECK (price > 0),
+--     ADD CONSTRAINT amount_in_stock_positive CHECK (amount_in_stock >= 0);
+-- -- STEP 6: ADD PRIMARY KEY
+-- ALTER TABLE products
+-- ADD COLUMN id INT PRIMARY KEY AUTO_INCREMENT;
+-- ALTER TABLE products
+-- ADD COLUMN id SERIAL PRIMARY KEY;

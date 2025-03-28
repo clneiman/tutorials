@@ -1,0 +1,18 @@
+-- INSERT INTO cities (name)
+-- VALUES ('San Antonio'),
+--     ('Orlando'),
+--     ('Las Vegas');
+-- 
+-- INSERT INTO addresses (street, house_number, city_id)
+-- VALUES ('Main St.', '123', 1),
+--     ('Magic Way', '777', 2),
+--     ('Universal Circle', '999', 2),
+--     ('Fiesta', '456', 1),
+--     ('Sunset Blvd.', '789', 3);
+-- 
+-- INSERT INTO users (first_name, last_name, email, address_id)
+-- VALUES ('John', 'Doe', 'test1@email.com', 1),
+--     ('Jane', 'Doe', 'test2@email.com', 2),
+--     ('Alice', 'Doe', 'test3@email.com', 3),
+--     ('Bob', 'Doe', 'test4@email.com', 4),
+--     ('Charlie', 'Doe', 'test5@email.com', 5);

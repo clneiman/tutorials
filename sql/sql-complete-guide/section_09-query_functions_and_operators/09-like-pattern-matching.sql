@@ -1,0 +1,12 @@
+-- SELECT first_name LIKE '_u%',
+--     first_name
+-- FROM memberships;
+--
+-- SELECT first_name
+-- FROM memberships
+-- WHERE first_name LIKE 'J___';
+--
+-- Postgresql
+-- SELECT first_name ILIKE 'ma%',
+--     first_name
+-- from memberships;

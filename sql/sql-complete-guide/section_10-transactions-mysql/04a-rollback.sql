@@ -1,0 +1,1 @@
+ROLLBACK to customer_inserted;

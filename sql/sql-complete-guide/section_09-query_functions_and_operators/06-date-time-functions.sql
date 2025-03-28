@@ -1,0 +1,28 @@
+-- SELECT EXTRACT(
+--         MONTH
+--         FROM last_checkin
+--     ) as last_checkin_month,
+--     last_checkin
+-- FROM memberships;
+--
+-- Postgresql
+-- SELECT EXTRACT(
+--         DOW
+--         FROM last_checkin
+--     ) as last_checkin_month,
+--     last_checkin
+-- FROM memberships;
+-- MySQL
+-- SELECT WEEKDAY(last_checkin) + 1 as last_checkin_weekday,
+--     last_checkin
+-- FROM memberships;
+--
+-- MySQL
+-- SELECT CONVERT(last_checkin, DATE) as last_checkin_date,
+--     CONVERT(last_checkin, TIME) as last_checkin_time
+-- FROM memberships;
+--
+-- Postgresql
+-- SELECT last_checkin::TIMESTAMP::DATE,
+--     last_checkin::TIMESTAMP::TIME
+-- FROM memberships;
